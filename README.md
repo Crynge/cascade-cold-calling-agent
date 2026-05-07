@@ -139,7 +139,14 @@ When API keys are absent, the provider adapters automatically fall back to deter
 python -m pytest tests -q
 npm run build:web
 python -m playwright install chromium
-python C:/Users/samee/.codex/skills/webapp-testing/scripts/with_server.py --server "python -m uvicorn apps.api.app.main:app --port 8000" --port 8000 --server "npm --workspace apps/web run dev -- --host 127.0.0.1 --port 5173" --port 5173 -- python tests/web_smoke.py
+```
+
+Then run the live smoke test with the API and web app running locally:
+
+```bash
+python -m uvicorn apps.api.app.main:app --port 8000
+npm --workspace apps/web run dev -- --host 127.0.0.1 --port 5173
+python tests/web_smoke.py
 ```
 
 The latest audit notes are in [docs/audit.md](./docs/audit.md).

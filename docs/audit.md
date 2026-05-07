@@ -17,7 +17,9 @@ Audit target: `cascade-cold-calling-agent`
 python -m pytest tests -q
 npm run build:web
 python -m playwright install chromium
-python C:/Users/samee/.codex/skills/webapp-testing/scripts/with_server.py --server "python -m uvicorn apps.api.app.main:app --port 8000" --port 8000 --server "npm --workspace apps/web run dev -- --host 127.0.0.1 --port 5173" --port 5173 -- python tests/web_smoke.py
+python -m uvicorn apps.api.app.main:app --port 8000
+npm --workspace apps/web run dev -- --host 127.0.0.1 --port 5173
+python tests/web_smoke.py
 ```
 
 ## Results
@@ -27,7 +29,7 @@ python C:/Users/samee/.codex/skills/webapp-testing/scripts/with_server.py --serv
 - `python -m pytest tests -q`: passed with `6/6`
 - `npm run build:web`: passed
 - `python -m playwright install chromium`: passed
-- `python C:/Users/samee/.codex/skills/webapp-testing/scripts/with_server.py --server "python -m uvicorn apps.api.app.main:app --port 8000" --port 8000 --server "npm --workspace apps/web run dev -- --host 127.0.0.1 --port 5173" --port 5173 -- python tests/web_smoke.py`: passed
+- `python tests/web_smoke.py` against live local API and web servers: passed
 
 ## Smoke artifact
 
