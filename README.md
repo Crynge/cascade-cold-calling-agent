@@ -1,5 +1,24 @@
 # Cascade Cold Calling Agent
 
+<!-- portfolio-seo:start -->
+![Stars](https://img.shields.io/github/stars/Crynge/cascade-cold-calling-agent?style=flat-square) ![License](https://img.shields.io/github/license/Crynge/cascade-cold-calling-agent?style=flat-square) ![Status](https://img.shields.io/badge/status-active-blue?style=flat-square)
+
+![Social Preview](docs/social-preview.png)
+
+> Compliance-first B2C AI cold-calling stack with OpenAI and Gemini cascade routing, simulator flows, and Twilio-ready handoff.
+
+**GitHub Search Keywords:** ai cold calling, b2c calling agent, openai gemini cascade, twilio calling automation, voice ai sales, telephony compliance, call center ai
+
+<!-- portfolio-seo:end -->
+
+<!-- portfolio-links:start -->
+<div align="center">
+
+[Documentation](docs) &middot; [Architecture](docs/architecture.md) &middot; [Audit](docs/audit.md) &middot; [Authors](AUTHORS.md) &middot; [Contributing](CONTRIBUTING.md) &middot; [Security](SECURITY.md) &middot; [Workflows](.github/workflows)
+
+</div>
+<!-- portfolio-links:end -->
+
 A compliance-first B2C cold-calling agent with **Cascade Mode** routing across **OpenAI** and **Gemini**. It ships as a full-stack starter with:
 
 - a FastAPI orchestration backend
